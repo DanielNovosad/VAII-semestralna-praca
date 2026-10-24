@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniRide - Domov</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- hlavicka -->
+<header class="hlavicka">
+    <div class="obsah hlavicka-obsah">
+
+        <a href="index.html" class="logo">🚙 UniRide</a>
+
+        <nav class="navigacia">
+            <a href="index.html" class="aktivna">Domov</a>
+            <a href="search.html">Vyhľadať jazdu</a>
+            <a href="#">Moje jazdy</a>
+            <a href="#">Profil</a>
+            <a href="#" class="prihlasenie">Prihlásiť sa</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- hlavny obsah -->
+<main>
+    <!-- uvod -->
+    <section class="uvod">
+        <div class="obsah">
+
+            <h1>Cestuj jednoducho s UniRide</h1>
+
+            <p>Nájdi si spoločnú jazdu alebo ponúkni voľné miesto vo svojom aute.</p>
+
+            <div class="tlacidla">
+                <a href="search.html" class="tlacidlo modre">Vyhľadať jazdu</a>
+                <a href="#" class="tlacidlo biele">Ponúknuť jazdu</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- informacne karty -->
+    <section class="informacie">
+        <div class="obsah karty">
+
+            <article class="karta">
+                <h2>Vyhľadávanie jázd</h2>
+                <p>Nájdi dostupné jazdy podľa miesta a dátumu.</p>
+            </article>
+
+            <article class="karta">
+                <h2>Moje jazdy a rezervácie</h2>
+                <p>Spravuj svoje ponuky a rezervované miesta.</p>
+            </article>
+
+            <article class="karta">
+                <h2>Môj profil</h2>
+                <p>Uprav osobné údaje a informácie o vozidle.</p>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- obrazky -->
+    <section class="ilustracia">
+
+        <picture>
+            <source media="(max-width: 600px)"
+                    srcset="images/uniride-landscape-mobile.svg">
+
+            <source media="(max-width: 900px)"
+                    srcset="images/uniride-landscape-tablet.svg">
+
+            <img src="images/uniride-landscape-desktop.svg"
+                 alt="Auto na ceste"
+                 class="obrazok">
+        </picture>
+
+    </section>
+
+</main>
+
+
+<!-- pata -->
+<footer class="pata">
+    <div class="obsah pata-obsah">
+        <span>UniRide</span>
+        <span>Spolu na cestách</span>
+    </div>
+</footer>
+
+</body>
+</html>
