@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+.obsah {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+
+/* hlavicka a navigacia */
+
+.hlavicka {
+    border-bottom: 1px solid #ddd;
+}
+
+.hlavicka-obsah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+.navigacia {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigacia a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navigacia a:hover,
+.navigacia .aktivna {
+    color: #2563eb;
+}
+
+.prihlasenie {
+    background-color: #f3f4f6;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+
+/* tlacidla */
+
+.tlacidlo {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.modre {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.modre:hover {
+    background-color: #1d4ed8;
+}
+
+.biele {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #ddd;
+}
+
+.biele:hover {
+    background-color: #f3f4f6;
+}
+
+
+/* uvodna stranka */
+
+.uvod {
+    padding: 60px 0 30px;
+}
+
+.uvod h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.uvod p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.tlacidla {
+    display: flex;
+    gap: 12px;
+}
+
+
+/* informacne karty */
+
+.informacie {
+    padding: 10px 0 30px;
+}
+
+.karty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.karta {
+    background-color: #f9f9fb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    min-height: 160px;
+}
+
+.karta h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.karta p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* obrazky */
+
+.ilustracia {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.obrazok {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* vyhladavanie jazd */
+
+.vyhladavanie {
+    padding: 40px 0 60px;
+    min-height: 75vh;
+}
+
+.vyhladavanie h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.popis {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+/* formular */
+
+.formular {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.polia {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.pole {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.pole label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.pole input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9fb;
+    font-size: 14px;
+}
+
+.formular-spodok {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.formular-spodok span {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* FILTRE */
+
+.filtre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filtre span {
+    background-color: #f3f4f6;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* karty jazd */
+
+.zoznam-jazd {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.karta-jazdy {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.karta-jazdy h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.karta-jazdy p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.detail {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.detail:hover {
+    background-color: #dbeafe;
+}
+
+.cena {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.cena strong {
+    font-size: 17px;
+}
+
+.cena span {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* pata*/
+
+.pata {
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.pata-obsah {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* tablet do 900px */
+
+@media (max-width: 900px) {
+
+    .hlavicka-obsah {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .navigacia {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .karty {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .polia {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .uvod h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* mobil do 600 px */
+
+@media (max-width: 600px) {
+
+    .obsah {
+        width: 92%;
+    }
+
+    .uvod {
+        padding: 40px 0 20px;
+    }
+
+    .uvod h1 {
+        font-size: 26px;
+    }
+
+    .tlacidla {
+        flex-direction: column;
+    }
+
+    .tlacidla .tlacidlo {
+        text-align: center;
+    }
+
+    .karty {
+        grid-template-columns: 1fr;
+    }
+
+    .karta {
+        min-height: auto;
+    }
+
+    .polia {
+        grid-template-columns: 1fr;
+    }
+
+    .vyhladavanie {
+        padding: 30px 0 40px;
+    }
+
+    .vyhladavanie h1 {
+        font-size: 26px;
+    }
+
+    .formular {
+        padding: 15px;
+    }
+
+    .formular-spodok {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .formular-spodok span {
+        text-align: center;
+    }
+
+    .karta-jazdy {
+        flex-direction: column;
+    }
+
+    .cena {
+        align-items: flex-start;
+    }
+
+    .navigacia {
+        gap: 12px;
+    }
+
+    .navigacia a {
+        font-size: 13px;
+    }
+
+    .pata-obsah {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
