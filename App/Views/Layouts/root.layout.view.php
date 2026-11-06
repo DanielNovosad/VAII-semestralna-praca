@@ -24,7 +24,7 @@
         <a href="<?= $link->url('home.index') ?>" class="logo">🚙 UniRide</a>
         <nav class="navigacia">
             <a href="<?= $link->url('home.index') ?>" class="<?= ($_GET['c'] ?? 'home') === 'home' ? 'aktivna' : '' ?>">Domov</a>
-            <a href="<?= $link->url('jazdy.index') ?>" class="<?= ($_GET['c'] ?? 'home') === 'jazdy' ? 'aktivna' : '' ?>">Vyhľadať jazdu</a>
+            <a href="<?= $link->url('ride.index') ?>" class="<?= ($_GET['c'] ?? 'home') === 'ride' ? 'aktivna' : '' ?>">Vyhľadať jazdu</a>
             <a href="#">Moje jazdy</a>
             <a href="#">Profil</a>
             <a href="#" class="prihlasenie">Prihlásiť sa</a>

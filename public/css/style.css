@@ -311,7 +311,54 @@ h1, h2, p {
 }
 
 
-/* pata*/
+/* tlacidla upravit a vymazat */
+
+.akcie-jazdy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.akcie-jazdy form {
+    margin: 0;
+}
+
+.tlacidlo-upravit,
+.tlacidlo-vymazat {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tlacidlo-upravit {
+    color: #2563eb;
+    background-color: #eff6ff;
+    border: 1px solid #dbeafe;
+}
+
+.tlacidlo-upravit:hover {
+    background-color: #dbeafe;
+}
+
+.tlacidlo-vymazat {
+    color: #dc2626;
+    background-color: #fef2f2;
+    border: 1px solid #fee2e2;
+}
+
+.tlacidlo-vymazat:hover {
+    background-color: #fee2e2;
+}
+
+
+/* pata */
 
 .pata {
     border-top: 1px solid #ddd;

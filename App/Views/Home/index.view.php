@@ -11,7 +11,7 @@
             <p>Nájdi si spoločnú jazdu alebo ponúkni voľné miesto vo svojom aute.</p>
 
             <div class="tlacidla">
-                <a href="<?= $link->url('jazdy.index') ?>" class="tlacidlo modre">Vyhľadať jazdu</a>
+                <a href="<?= $link->url('ride.index') ?>" class="tlacidlo modre">Vyhľadať jazdu</a>
                 <a href="#" class="tlacidlo biele">Ponúknuť jazdu</a>
             </div>
 
