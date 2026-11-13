@@ -67,4 +67,9 @@ class Ride extends Model
     {
         $this->available_seats = $availableSeats;
     }
+
+    public function getBookings(): array
+    {
+        return $this->getAllRelated(Booking::class, 'ride_id');
+    }
 }

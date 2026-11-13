@@ -3,6 +3,7 @@
 /** @var string $contentHTML */
 /** @var \Framework\Auth\AppUser $user */
 /** @var \Framework\Support\LinkGenerator $link */
+
 ?>
 <!DOCTYPE html>
 <html lang="sk">
@@ -22,9 +23,23 @@
 <header class="hlavicka">
     <div class="obsah hlavicka-obsah">
         <a href="<?= $link->url('home.index') ?>" class="logo">🚙 UniRide</a>
+
         <nav class="navigacia">
-            <a href="<?= $link->url('home.index') ?>" class="<?= ($_GET['c'] ?? 'home') === 'home' ? 'aktivna' : '' ?>">Domov</a>
-            <a href="<?= $link->url('ride.index') ?>" class="<?= ($_GET['c'] ?? 'home') === 'ride' ? 'aktivna' : '' ?>">Vyhľadať jazdu</a>
+            <a href="<?= $link->url('home.index') ?>"
+               class="<?= ($_GET['c'] ?? 'home') === 'home' ? 'aktivna' : '' ?>">
+                Domov
+            </a>
+
+            <a href="<?= $link->url('ride.index') ?>"
+               class="<?= ($_GET['c'] ?? 'home') === 'ride' ? 'aktivna' : '' ?>">
+                Vyhľadať jazdu
+            </a>
+
+            <a href="<?= $link->url('booking.index') ?>"
+               class="<?= ($_GET['c'] ?? 'home') === 'booking' ? 'aktivna' : '' ?>">
+                Rezervácie
+            </a>
+
             <a href="#">Moje jazdy</a>
             <a href="#">Profil</a>
             <a href="#" class="prihlasenie">Prihlásiť sa</a>
